@@ -1,6 +1,24 @@
+// Small devices
 =sm
-    @media (min-width: 480px) and (max-width: 619pxx)
+    @media (min-width: #{$screen-sm-min})
         @content
+
+// Medium devices
 =md
-    @media (min-width: 620px) and (max-width: 1099px)
+    @media (min-width: #{$screen-md-min})
+        @content
+
+// Large devices
+=lg
+    @media (min-width: #{$screen-lg-min})
+        @content
+
+// Extra large devices    
+=xl
+    @media (min-width: #{$screen-xl-min})
+        @content
+
+// Custom breakpoint
+=sw($screenWidth)
+    @media (min-width: #{$screenWidth}+'px')
         @content
