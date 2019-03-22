@@ -1,24 +1,24 @@
 // Small devices
 =sm
-    @media (min-width: #{$screen-sm-min})
+    @media (min-width: #{$screen-sm-min + $container-padding})
         @content
 
 // Medium devices
 =md
-    @media (min-width: #{$screen-md-min})
+    @media (min-width: #{$screen-md-min + $container-padding})
         @content
 
 // Large devices
 =lg
-    @media (min-width: #{$screen-lg-min})
+    @media (min-width: #{$screen-lg-min + $container-padding})
         @content
 
 // Extra large devices    
 =xl
-    @media (min-width: #{$screen-xl-min})
+    @media (min-width: #{$screen-xl-min + $container-padding})
         @content
 
 // Custom breakpoint
 =sw($screenWidth)
-    @media (min-width: #{$screenWidth}+'px')
+    @media (min-width: #{$screenWidth + $container-padding}+'px')
         @content
