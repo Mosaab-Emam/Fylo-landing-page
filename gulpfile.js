@@ -36,7 +36,7 @@ gulp.task('sass', done=>{
 gulp.task('js', done=>{
     gulp.src('./src/scripts/**/*.js')
             .pipe(concat('main.js'))
-            .pipe(uglify())
+            //.pipe(uglify())
             .pipe(gulp.dest('./dist/assets/js'));
     done();
 });

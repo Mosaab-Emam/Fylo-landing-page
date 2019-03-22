@@ -12,13 +12,14 @@ html
                 .logo
                     img(src="assets/images/logo.svg", alt="Logo")
                 .links
-                    ul
+                    ul#navMenu
                         li
                             a(href="#") Features
                         li
                             a(href="#") Team
                         li
                             a(href="#") Sign In
+                i.fa.fa-bars.fa-lg#navToggle(onclick='toggleNavMenu()')
 
         header.text-center
             .container

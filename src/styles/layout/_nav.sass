@@ -1,6 +1,7 @@
 nav
     background: $introbg
     padding: 20px 0
+    min-height: 70px
     .container
         display: flex
     .logo
@@ -15,3 +16,29 @@ nav
             li
                 margin-left: .5rem
                 margin-right: .5rem
+        @media (max-width: 374px)
+            ul
+                background: $mainbg
+                flex-direction: column
+                position: absolute
+                left: 0
+                right: 0
+                top: 70px
+                height: auto
+                align-items: end
+                padding: 0 1rem
+                height: 0
+                overflow: hidden
+                transition: all .5s ease-in-out
+                &.visible
+                    height: 145px
+                    padding: 1rem
+                li
+                    margin: 0
+                    line-height: 2.5
+    i
+        align-self: center
+        padding: .5rem
+        cursor: pointer
+        @media (min-width: 375px)
+            display: none

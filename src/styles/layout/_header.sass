@@ -1,9 +1,15 @@
 header
-    background: $introbg url('../images/bg-curvy-mobile.svg') no-repeat bottom center
+    background: $introbg url('../images/bg-curvy-desktop.svg') no-repeat bottom center
     color: white
     padding: 20px 0 40px
     img
         width: 80%
+        +md
+            width: 75%
+        +lg
+            width: 65%
+        +xl
+            width: 50%
     h2
         margin: 20px 0
     p
