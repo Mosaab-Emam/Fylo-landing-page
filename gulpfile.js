@@ -11,7 +11,6 @@ gulp.task('server', done=>{
     gulp.src('./dist')
         .pipe(server({
             livereload: true,
-            open: true,
         }));
     done();
 });
