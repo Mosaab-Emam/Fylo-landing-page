@@ -1,19 +1,25 @@
 #testimonials
     padding: 20px 0
     position: relative
-    .quotes
-        width: 48px
-        position: absolute
-        z-index: -1
-        margin: -1rem 0 0 1rem
+    
     .container
         display: flex
         flex-direction: column
+        +md
+            flex-direction: row
+        .quotes
+            width: 48px
+            position: absolute
+            z-index: -1
+            margin: -1rem 0 0 1rem
     .card
         background: $testimonialsbg
         padding: 1rem 2rem
         width: 90%
         margin: 1rem auto
+        +md
+            margin-left: 1rem
+            margin-right: 1rem
         .author
             display: flex
             align-items: center
