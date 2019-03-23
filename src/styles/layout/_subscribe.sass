@@ -1,8 +1,11 @@
 #subscribe
-    margin: 20px auto
+    margin: 0 auto
     background: $introbg
     padding: 2rem
     width: 90%
+    position: absolute
+    +md
+        width: 80%
     h2
             margin-top: 0
     form
@@ -22,4 +25,6 @@
             border-radius: 20px
             padding: 1rem 2rem
             cursor: pointer
-            background: -webkit-linear-gradient(left, rgba(101,226,217,1) 25%,rgba(51,158,204,1) 99%) 
+            background: -webkit-linear-gradient(left, rgba(101,226,217,1) 25%,rgba(51,158,204,1) 99%)
+            @media (max-width: 374px)
+                padding: 1rem
