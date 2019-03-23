@@ -1,17 +1,27 @@
 #productive
     padding: 20px 0
+    .container
+        display: flex
+        flex-direction: column
+        +md
+            flex-direction: row
     img
         width: 100%
 
-    a
-        color: $cyang
-        position: relative
-        padding-bottom: .25rem
-        &:after
-            content: ''
-            height: 1px
-            background: $cyang
-            position: absolute
-            bottom: 0
-            left: 0
-            right: 0
+    .content
+        margin-left: 2rem
+        align-self: center
+        a
+            color: $cyang
+            position: relative
+            padding-bottom: .25rem
+            &:after
+                content: ''
+                height: 1px
+                background: $cyang
+                position: absolute
+                bottom: 0
+                left: 0
+                right: 0
+            i
+                margin-left: .5rem
