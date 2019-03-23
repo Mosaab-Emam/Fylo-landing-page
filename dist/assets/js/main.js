@@ -1,13 +1,12 @@
-const navToggle = document.getElementById('navToggle');
-const navMenu = document.getElementById('navMenu');
+const navbar = document.getElementById('navbar');
 
 var navVisible = false;
 
 const toggleNavMenu = () => {
     navVisible = !navVisible
     if (!navVisible) {
-        navMenu.classList.add('visible');
+        navbar.classList.add('expand');
     } else {
-        navMenu.classList.remove('visible');
+        navbar.classList.remove('expand');
     }
 }
