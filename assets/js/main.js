@@ -26,8 +26,8 @@ function centeriseSub() {
     sub.style.left = ((bodyWidth / 2) - (subWidth / 2)) + 'px';
 
     // Set up appropriate paddings for testimonials section and footer
-    testimonials.style.paddingBottom = (subHeight / 2) + 32 + 'px';
-    footer.style.paddingTop = (subHeight / 2) + 64 + 'px';
+    testimonials.style.paddingBottom = (subHeight / 2) + 84 + 'px';
+    footer.style.paddingTop = (subHeight / 2) + 84 + 'px';
 }
 
 centeriseSub();
