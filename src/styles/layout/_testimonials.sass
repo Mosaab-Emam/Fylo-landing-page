@@ -11,7 +11,13 @@
             width: 48px
             position: absolute
             z-index: -1
-            margin: -1rem 0 0 1rem
+            margin: -2rem 0 0 .5rem
+            +sm
+                margin: -2rem 0px 0px 1rem
+            +md
+                margin: 1rem 0 0 0
+            +lg
+                margin: -.5rem 0 0 .5rem
     .card
         background: $testimonialsbg
         padding: 1rem 2rem
